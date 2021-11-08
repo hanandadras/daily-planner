@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var currentTimeEl = $("#currentDay");
     var timeNow = moment ();
-    timeNow = moment().format("dddd, MMM DD, YYYY");
+    timeNow = moment().format('MMMM Do YYYY, h:mm:ss a');
     currentTimeEl.text(timeNow);
 
     var saveBtn = $('.saveBtn');
@@ -13,9 +13,9 @@ $(document).ready(function() {
         localStorage.setItem(time, value)
     });
  
-    var hour =moment().format('MMMM Do YYYY, h:mm:ss a');
+    var hour = moment().format('MMMM Do YYYY, h:mm:ss a');
     console.log ("hour"+ hour);
-    
+    //getting element from localStorage
 
     $(".task-9").val(localStorage.getItem('9'))
     $(".task-10").val(localStorage.getItem('10'))
@@ -30,17 +30,18 @@ $(document).ready(function() {
 
 });
 
-var hourNow =currentTime;
-console.log(hourNow);
-console.log(currentTime);
-    functionbackgroungColorEdit() {
-        if (hourNow == currentTime){
-            document.getElementById.style.functionbackgroungColor = "yellow";
-        } else if (hourNow < currentTime){
-            document.getElementById.style.functionbackgroungColor = "lightgreen";
-        } else
-        {
-            document.getElementById.style.functionbackgroungColor = "darkgreen"; 
-        
-        }
+
+
+
+    var objDate = new Date();
+    var hours = objDate.getHours();
+    if(hours >= 9 && hours <= 17){
+        $(".hour").addClass("present");
     }
+    else if(hours < 9){
+        $(".hour").addClass("past");
+    }
+    else{
+        $(".hour").addClass("future");
+    }
+
