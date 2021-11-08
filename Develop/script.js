@@ -29,3 +29,18 @@ $(document).ready(function() {
 
 
 });
+
+var hourNow =currentTime;
+console.log(hourNow);
+console.log(currentTime);
+    functionbackgroungColorEdit() {
+        if (hourNow == currentTime){
+            document.getElementById.style.functionbackgroungColor = "yellow";
+        } else if (hourNow < currentTime){
+            document.getElementById.style.functionbackgroungColor = "lightgreen";
+        } else
+        {
+            document.getElementById.style.functionbackgroungColor = "darkgreen"; 
+        
+        }
+    }
