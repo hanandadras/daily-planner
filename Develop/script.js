@@ -30,14 +30,12 @@ $(document).ready(function() {
 
 });
 
-
-
-
     var objDate = new Date();
     var hours = objDate.getHours();
-    if(hours >= 9 && hours <= 17){
+     if (hours >= 9 && hours <= 17){
         $(".hour").addClass("present");
     }
+
     else if(hours < 9){
         $(".hour").addClass("past");
     }

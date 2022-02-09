@@ -16,7 +16,7 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  background-color:lightyellow;
+  background-color:tan;
   color: maroon;
   border-radius: 20;
   border-bottom: 10px solid black;
@@ -53,7 +53,7 @@ textarea{
 }
 
 .present {
-  background-color: #ecfa2e;
+  background-color: lightgray;
   color:rgb(88, 72, 72);
 }
 
@@ -67,7 +67,7 @@ textarea{
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color:rgb(88, 72, 72);
-  color: yellow;
+  color: lightyellow;
 }
 
 .saveBtn i:hover {
