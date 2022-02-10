@@ -15,6 +15,7 @@ $(document).ready(function() {
  
     var hour = moment().format('MMMM Do YYYY, h:mm:ss a');
     console.log ("hour"+ hour);
+    
     //getting element from localStorage
 
     $(".task-9").val(localStorage.getItem('9'))
